@@ -1,0 +1,103 @@
+{
+  "status": 200,
+  "body": {
+    "competition": {
+      "slug": "u-rama-melon-make-the-ai-judge-laugh-302d0825",
+      "title": "Make the AI Judge Laugh",
+      "status": "open",
+      "visibility": "public",
+      "placements": "after_finalize",
+      "resolved_phase": null
+    },
+    "phase": {
+      "key": "dev",
+      "title": "Development",
+      "starts_at": "2026-11-25T13:34:34.000Z",
+      "ends_at": "2026-11-26T13:35:00.000Z",
+      "finalized_at": null,
+      "scores": "after_finalize",
+      "scores_visible": false,
+      "placements_held": true,
+      "dataset_sha256": null
+    },
+    "view": "performance",
+    "views": [
+      "overall",
+      "performance"
+    ],
+    "metrics_withheld": true,
+    "blind_rounds_note": "Blind rounds: no one's rank or score shows here until the results are published, your own included. Every entry received so far whose grade has finished is judged the way the final judges at each of 3 rounds (the last is the final at the deadline); after each round you see your own rank and score out of the field, with the schedule and the next round, at GET /api/competitions/u-rama-melon-make-the-ai-judge-laugh-302d0825/rounds (MCP: get_my_rounds), and, signed in, the five entries ranked just above and the five just below your best placed entry in that round at GET /api/competitions/u-rama-melon-make-the-ai-judge-laugh-302d0825/rounds/board (MCP: get_round_board; CLI: makefun rounds u-rama-melon-make-the-ai-judge-laugh-302d0825), never the rest of the field.",
+    "title": "Results",
+    "rank_key": "judge",
+    "tie_break": {
+      "key": "bytes",
+      "title": "Size",
+      "better": "lower"
+    },
+    "cost_key": null,
+    "overall_key": null,
+    "submission_rule": "Force_Last",
+    "columns": [
+      {
+        "key": "judge",
+        "title": "Judge win rate",
+        "index": 0,
+        "sorting": "desc",
+        "precision": 0,
+        "hidden": false,
+        "computation": null,
+        "computation_indexes": null,
+        "source": "performance.judge.win_rate_micro"
+      },
+      {
+        "key": "judge_low",
+        "title": "Interval low",
+        "index": 1,
+        "sorting": "desc",
+        "precision": 0,
+        "hidden": false,
+        "computation": null,
+        "computation_indexes": null,
+        "source": "performance.judge.interval_low_micro"
+      },
+      {
+        "key": "judge_high",
+        "title": "Interval high",
+        "index": 2,
+        "sorting": "desc",
+        "precision": 0,
+        "hidden": false,
+        "computation": null,
+        "computation_indexes": null,
+        "source": "performance.judge.interval_high_micro"
+      },
+      {
+        "key": "valid",
+        "title": "Valid",
+        "index": 3,
+        "sorting": "desc",
+        "precision": 0,
+        "hidden": false,
+        "computation": null,
+        "computation_indexes": null,
+        "source": null
+      },
+      {
+        "key": "bytes",
+        "title": "Size",
+        "index": 4,
+        "sorting": "asc",
+        "precision": 0,
+        "hidden": false,
+        "computation": null,
+        "computation_indexes": null,
+        "source": "performance.judge.artifact_bytes"
+      }
+    ],
+    "harness_kind": "program/v1",
+    "interval": null,
+    "quote": null,
+    "resolution": null,
+    "entries": []
+  }
+}
